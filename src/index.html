@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Firebase Auth Example</title>
+   
     <!-- BOOSTRAP CSS -->
     <link
       rel="stylesheet"
@@ -15,6 +15,7 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <link rel="stylesheet" href="./main.css" />
   </head>
 
@@ -23,7 +24,9 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="./img/logoarqui.png" alt="ArquiNnova Logo" width="30" height="24" />
+          <div class="imagen-logo">
+            <img src="./img/logoarqui.png" alt="ArquiNnova Logo" width="120" height="40" />
+          </div>
         </a>
         <button
           class="navbar-toggler"
@@ -38,25 +41,110 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
+            <div class="navbar-nav navbar-dropdown">
+
+            <li class=" nav-item dropdown">
+              <a class="nav-link dropdown-toggle white-color dropdown-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Modelos 3D
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle white-color dropdown-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Texturas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Materiales</a></li>
+                <li><a class="dropdown-item" href="#">Muros</a></li>
+                <li><a class="dropdown-item" href="#">Suelos</a></li>
+                <li><a class="dropdown-item" href="#">Elementos Naturales</a></li>
+                <li><a class="dropdown-item" href="#">Terrosos</a></li>
+                <li><a class="dropdown-item" href="#">Fabricados</a></li>
+                <li><a class="dropdown-item" href="#">Tejados</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle white-color dropdown-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bloques
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item ">
+              <a class="nav-link white-color dropdown-text" href="#">Galeria</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link white-color dropdown-text" href="#">Comunidad</a>
+            </li>
+          </div>
+
             <a
-              class="nav-link logged-out"
-              href="#"
-              data-bs-toggle="modal"
-              data-bs-target="#signinModal"
-              >Signin</a
+              class="nav-link logged-out login"
+              href="login.html"
+              >Iniciar sesión</a
             >
             <a
-              class="nav-link logged-out"
-              href="#"
-              data-bs-toggle="modal"
-              data-bs-target="#signupModal"
-              >Signup</a
+              class="nav-link logged-out signup"
+              href="signup.html"
+              >Crear una cuenta</a
             >
-            <a class="nav-link logged-in" href="#" id="logout">Logout</a>
+            
+            <!-- <a class="nav-link logged-in" href="#" id="logout">Logout</a> -->
           </div>
         </div>
       </div>
     </nav>
+
+    <!-- Main Text -->
+    <div class="main-text">
+      <p>
+        <span>¡Explora</span>
+        <span>todas las</span>
+        <span> posibilidades!</span>
+      </p>
+    </div>  
+
+    <div class="sub-text">
+      <p>
+        <span>¡Comienza hoy mismo a explorar, crear y </span>
+        <span>transformar con nuestra plataforma! ¡Tu próximo </span>
+        <span>proyecto arquitectónico te espera!</span>
+      </p>
+    </div>
+
+    <!-- Glassmorphism cards -->
+
+    <div class="card-texturas zoom-card">
+      <p>Texturas</p>
+      <div class="img-card">
+         <img src="./img/ladrillo.webp" alt="">
+      </div>
+    </div>
+
+    <div class="card-modelos zoom-card">
+      <p>Modelos 3D</p>
+      <div class="img-card">
+        <img src="./img/piedra.webp" alt="">
+      </div>
+    </div>
+
+    <div class="card-bloques zoom-card">
+      <p>Bloques</p>
+      <div class="img-card">
+        <img src="./img/balon.png" alt="">
+      </div>
+    </div>
 
     <!-- Modal -->
     <div
